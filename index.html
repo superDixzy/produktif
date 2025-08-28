@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bouqet Fana</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="js/js.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="Image/list.png" alt="List" class="icon left-icon">
+        <img src="Image/fana.png" alt="Bouqet Fana Logo" class="logo">
+        <a href="https://instagram.com/bouqetfana" target="_blank">
+            <img src="Image/ig.png" alt="Instagram" class="icon right-icon">
+        </a>
+        <ul class="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn" id="product-toggle">Products ▾</a>
+                <ul class="dropdown-content" id="product-menu">
+                    <li><a href="#">Flower Bouquets</a></li>
+                    <li><a href="#">Toy Bouquets</a></li>
+                    <li><a href="#">Custom Bouquets</a></li>
+                </ul>
+            </li>
+            <li><a href="#promo">Promo</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>          
+    </header>
+
+  <footer>
+    <p>&copy; 2025 Bouqet Fana. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const productToggle = document.getElementById('product-toggle');
+    const productMenu = document.getElementById('product-menu');
+
+    productToggle.addEventListener('click', function(event) {
+      event.preventDefault();
+      productMenu.classList.toggle('active');
+    });
+
+    document.addEventListener('click', function(event) {
+      if (!productMenu.contains(event.target) && event.target !== productToggle) {
+        productMenu.classList.remove('active');
+      }
+    });
+  </script>
+</body>
+</html>
