@@ -1,0 +1,78 @@
+/* Mengatur gaya umum untuk seluruh halaman */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigasi bar atas (Home, About, Us, Menu, Contact) */
+nav {
+    background-color: #3638c8;
+    padding: 30px;
+}
+
+/* Mengatur daftar menu navigasi */
+nav ul {
+    list-style-type: none; /*Tanpa bullet*/
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /*Item Menu*/
+}
+
+/* Mengatur setiap item dalam daftar navigasi */
+nav ul li {
+    margin: 0 15px;
+}
+
+/* Mengatur item menu dalam navigasi */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Merubah warna item teks ketika saat di klik */
+nav ul li a:hover {
+    color: #ddd;
+}
+
+/* Mengatur gaya umum untuk setiap section */
+section {
+    padding: 2rem;
+    min-height: 100px;
+    text-align: center;
+}
+
+
+#home { background-color: #f4f4f4; }
+#about { background-color: #e0e0e0; }
+#menu { background-color: #d0d0d0; }
+
+
+#contact { 
+    background-color: #46a5cb;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5rem;
+}
+
+#contact h2{
+    text-align: left;
+    font-size: 30px;
+}
+
+#contact h3{
+    text-align: right;
+    font-size: 30px;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
